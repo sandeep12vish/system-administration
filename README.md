@@ -1,7 +1,7 @@
 # system-administration
 
-## Patch Management process for the OS
-Lunix Patch Management
+## Linux Patch Management process for the OS
+
 ### 1: It's requires root privileges- 
 		$sudo su-
 ### 2. Need to check all packages in the OS
