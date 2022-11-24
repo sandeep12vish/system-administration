@@ -1,0 +1,29 @@
+Port is logical connection which is used by the programs and service to exchange the information
+It determines which program and service on a computer and server that is going to be used. Example Web Server, FTP, Email
+Port is unique number used by the programs or services
+Port range from 0 - 65535 assigned by IANA(Internet Assigned Numbers Authority)
+Ports number are broken down into 3 categories: 
+   - Ports from 0-1023 system ports. example- 80, 443,21,25 etc
+   - ports from  1024 - 49151 are user or registered ports. example: 1102 Adobe server, 1433 MS SQL Server, 1416 Novel, 1527 Oracle etc
+   - ports from  49152-65535 are Dynamic or private 
+
+Common ports nummbers
+  - 80 Web page(HTTP)
+  - 443 Web Page(HTTPS)
+  - 21 FTP (File transfer protocol)
+  - 25 Email (SMTP)
+  - 22 SSH 
+  Port number is always associated with an IP Address
+  Example: 
+     10.10.10.1:21
+     10.10.2.2:22
+     
+  IP address detrmines the location of the server. example - 10.10.10.1 
+  Ports number determines which service or program on that server wants to use. example: 21, 22, 80, 443
+  
+ Use case: 
+  When user/client wants to open a google page: 
+  user will type http://google.com into a web browser ------> this will name will converted into IP address(172.217.166.46:80) \
+  Request will reach to google web server which is running on port number 80 and in response google page will be appear on our screen.
+
+
