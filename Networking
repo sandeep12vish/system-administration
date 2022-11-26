@@ -1,3 +1,26 @@
 #Netstat (Network statistics)
 - It is a command line tool used to display the current connections and port activity on your computer.
 - It is use to see program the running on which port number on the server. 
+
+1. $netstat 
+    - Output will appear on the screen a little late because it will use DNS to resolve numbers in the name.
+2. $netstat -n
+  - It is faster than the $netstat because it does not use DNS to resolve number to name
+3. $netstat -a
+  - Displays active connections and which TCP and UDP ports are listening for a connection.
+4. $netstat -b
+  - Displays which program is used to make the connection. 
+5. $netstat -f 
+  - Displays fully qualified domain names in the foreign address column.
+5. $netstat -f 
+  - Displays fully qualified domain names in the foreign address column.
+6. $netstat -an
+  - a Will display active TCP and UDP connection with ports number. 
+  - n  shows only the number not the name
+7. $netstat -?
+  - Will display the full switch list
+8. $ netstat -l
+ - command to display only listening connections
+
+  
+  
