@@ -1,0 +1,56 @@
+Ping 
+
+- $ping command is most widely used to troubleshoot the network issue such as 
+	- test network connectivity
+	-  test network interface  card (NIC)
+	- test DNS names resolution issues
+
+$ ping 192.168.1.5
+Our computer will send the request over the internet/LAN  and wait for the reply. The server will send the data packet in response back to us in reply (echo reply request). This reply will let the exact status of the connectivity.
+
+
+$ping 192.168.1.5 
+
+If the output response is  “Request time out”
+Here are two reasons for it:
+The server is Power down 
+If the server is up and running then the server is using FIREWALL which blocks the ping request.
+
+$ping 11.22.33.44 
+
+# Packet loss 
+Reasons for packet loss:
+- Network congestion (lots of traffic on the network)
+- Faulty hardware
+- Bad cable 
+- Bad wiring
+- Bad network card (NIC)
+- Bad modem
+
+# $ ping 11.22.33.44
+
+
+ If the “Destination host is unreachable” - route to destination is not found 
+  Reasons (router has no information on how to route the data to the destination):
+    - The remote server is down or disconnected from the network
+    - Our computer is not connected to a network
+	
+	Example: 
+	$ ping yahoo.com 
+
+# If we get success then is means no issue with h/w 
+
+# This problem may be a web browser or firewall
+
+
+# Before checking your whole physical device do a “loopback test”
+
+# $ping 127.0.0.1   	or $ ping localhost 
+
+If the ping is a success then your network card is working properly
+
+In case of failure then the problem may be with NIC
+
+$ping 
+	Can be used to test DNS issues. 
+
