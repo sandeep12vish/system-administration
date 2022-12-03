@@ -1,1 +1,19 @@
+## File permission
 
+### To check the permission
+  
+  - $ ls -l
+  
+  $ls -l /home/tom
+-rwxr-xr--  1 xxx   users 1024  Nov 2 00:10  xxx-file
+drwxr-xr--- 1 yyy   users 1024  Nov 2 00:10  tomdir
+
+### To change the permission
+  - $chmod o+wx tom
+  
+  $chmod o+wx,u-x,g = rx testfile
+  
+  ### change ownership
+  - $ chown user filelist
+  
+  
