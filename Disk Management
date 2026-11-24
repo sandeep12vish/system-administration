@@ -1,1 +1,22 @@
+# Check disk utilization 
+df -h
+#Displays mounted filesystem usage in human-readable format.
+
+df -Th
+#Displays filesystem type and disk utilization.
+
+du -sh /var/log
+#Checks the total size of a directory.
+
+du -ah /var | sort -rh | head -20
+# Finds the 20 largest files/directories under /var.
+
+lsblk
+# Displays disks, partitions and mount points.
+
+### Identify disk information
+fdisk -l
+lsblk -f
+blkid
+sudo lshw -class disk
 
