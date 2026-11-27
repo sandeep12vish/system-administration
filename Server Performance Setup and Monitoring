@@ -1,1 +1,6 @@
-
+uptime
+free -h
+df -h
+vmstat 1 5
+iostat -xz 1 5
+ps aux --sort=-%cpu | head -10
